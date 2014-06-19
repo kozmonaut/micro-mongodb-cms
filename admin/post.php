@@ -28,12 +28,10 @@ switch($check){
 			
 			if($empty != 1){
 				$post = array(
-				'author'=>$_POST['author'],
 				'title' => $_POST['title'],
 				'content' => $_POST['content'],
 				'category' => $_POST['category'],
 				'published' => new MongoDate()
-	
 				);
 			
 			$collection->insert($post, array('safe' => True));
@@ -78,8 +76,7 @@ switch($check){
 				<p><input type="text" name="category" id="tags/"></p>
 				<p><input type="submit" class="btn_submit" name="btn_submit" value="Save"/> <a href="dashboard.php" class="btn_submit">Return to Dashboard</a></p>
 				
-				<h3>Author</h3>
-				<p><input type="text" name="author" id="author/" value="<?php echo $user->username;?>"></p>
+				
 			</form>
 
 			<?php endif;?>
