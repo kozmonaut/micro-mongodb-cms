@@ -3,6 +3,8 @@ micro-mongodb-cms v0.9
 
 Example of using MongoDB database in blog CMS scenario.
 
+![ScreenShot](/images/micromongoblog-post.png)
+
 Using:
 MongoDB(for storing data), 
 PHP(fetching and pushing data between frontend and database),
